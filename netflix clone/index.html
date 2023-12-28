@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang=""en>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compactible" content="IE=edge" />
+        <meta name="viewpoint" content="width=device-width, intial-scale=1.0" />
+        <title>Home | Netflix</title>
+        <link rel="stylesheet" href="homepage.css"/>
+        <script src="script.js"></script> 
+    </head>
+    <body>
+
+        <!-- navbar-->
+        <div class="nav">
+            <div class="nav__left">
+                <a href="index.html">
+            <img class="nav_logo" src="./images/logo.png" alt=""></a>
+            
+            <div class="nav-netflix">
+                <section>
+                    <button>Home</button>
+                    <button>Movies</button>
+                    <button>TV shows</button>
+                    <button>News & Popular</button>
+                    <button>My List</button>
+                </section>
+            </div>
+        </div>
+            <div class="nav__right">
+                    <div class="nav-icons">
+                        <input type="text" placeholder="Search">
+                        <img src="./images/avatar.png" class="nav_avatar" alt="">
+                    </div>
+            </div>
+        </div>
+        <!-- banner-->
+        <header id="banner">
+            <div id="banner__contents">
+                <h1 id="banner__title"></h1>
+                <div id="banner__buttons">
+                    <button id="banner__button">Play</button>
+                    <button id="banner__button">My List</button>
+                </div>
+                <p id="banner__description"></p>
+            </div>
+            
+        </header>
+
+        <!-- row-->
+        <div id="headrow">
+            <div class="row">
+                <h2 class="row__title"></h2>
+                <div class="row__posters"></div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener("scroll",function(){
+
+                var nav= document.querySelector(".nav");
+                nav.classList.toggle("active",window.scrollY > 0);
+            })
+        </script> { % endcomment%}
+    </body>
+</html>
